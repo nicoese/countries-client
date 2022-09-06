@@ -16,12 +16,32 @@ export const StyledForm = styled.div`
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border-radius: 3px;
 
+  @media (max-width: 1220px){
+    max-width: 730px;
+  }
 
+  @media (max-width: 750px){
+    max-width: 85%;
+  }
+  
+  input, select, button {
+    @media (max-width: 750px){
+      max-width: 92%;
+      font-size: smaller;
+    }
+  }
+  
   form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 40px;
+
+    @media (max-width: 1220px){
+      display: flex;
+      flex-direction: column;
+    }
+    
   }
 
   h2 {

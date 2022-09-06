@@ -20,6 +20,21 @@ export const StyledCard = styled.div`
 
   @media (max-width: 895px){
     
+    
+
+    min-width: 280px;
+    min-height: 350px;
+    
+    max-width: 30%;
+    
+    img{
+      min-width: 280px;
+      min-height: 160px;
+    }
+  }
+  
+  @media(max-width: 610px){
+
     max-width: 150px;
     min-width: 120px;
     min-height: 200px;
