@@ -10,7 +10,7 @@ export const StyledForm = styled.div`
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1F0A4E;
   align-self: center;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -30,6 +30,7 @@ export const StyledForm = styled.div`
     font-family: Bahnschrift;
     color: lightgrey;
   }
+  
 
   button {
 
@@ -39,6 +40,7 @@ export const StyledForm = styled.div`
     align-self: center;
     font-size: larger;
     outline: none;
+    margin-bottom: 40px;
     border-radius: 3px;
     background-color: #1F0A4E;
     border: solid 2px white;
@@ -83,7 +85,10 @@ export const StyledForm = styled.div`
     padding-top: 15px;
     padding-bottom: 15px;
     display: ${({success}) => success ? 'block' : 'none'};
-  }
+    
+    
+    }
+  
 `
 
 export const ActivityForm = (props) => {

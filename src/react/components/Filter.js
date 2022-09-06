@@ -10,6 +10,13 @@ export const StyledFilter = styled.div`
   margin-top: 10px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.7));
   
+  @media (max-width: 1250px){
+    min-width: 200px;
+  }
+  @media (max-width: 895px){
+    display: none;
+  }
+  
   h3{
     margin-top: 30px;
     margin-bottom: 30px;

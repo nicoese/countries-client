@@ -12,8 +12,23 @@ export const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
 
+  @media(max-width: 895px){
+    flex-direction: column;
+    min-width: 350px;
+    
+  }
+  
+  @media (max-width: 1080px){
+    
+    min-height: 180px;
+  }
+
   h1 {
     font-size: 45px;
+    
+    @media (max-width: 1080px){
+      font-size: 25px;
+    }
   }
 
   button {
@@ -24,17 +39,33 @@ export const StyledHeader = styled.header`
     //border: solid 2px white;
     background-color: #311178;
 
+    @media (max-width: 1080px){
+      max-height: 40px;
+      max-width: 170px;
+    }
+
+    @media(max-width: 895px){
+      margin-bottom: 15px;
+      //margin: 5px;
+    }
+
     :hover {
       filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.9));
       cursor: pointer;
     }
   }
   
+  
   .landing{
     width: 60px;
     margin-left: 50px;
     border: none;
     background-color: #4618ac;
+    
+    @media (max-width: 895px){
+      display: none;
+    }
+    
     :hover{
       cursor: pointer;
       font-size: larger;

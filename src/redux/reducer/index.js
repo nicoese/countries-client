@@ -12,7 +12,7 @@ const initialState = {
     countries: [],
     countriesBeforeFilter: [],
     currentPage: 1,
-    countriesPerPage: 10,
+    countriesPerPage: 20,
     currentCountries: [],
     countryDetail: {},
     countriesLength: 0,

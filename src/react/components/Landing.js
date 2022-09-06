@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export const StyledLanding = styled.div`
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 3px;
   display: flex;
   flex-direction: column;

@@ -21,6 +21,16 @@ export const StyledSeeker = styled.div`
     background-color: #4618ac;
     outline: none;
 
+    @media (max-width: 1080px){
+      max-height: 36px;
+      max-width: 300px;
+      font-size: small;
+    }
+
+    @media(max-width: 895px){
+      max-width: 100px;
+    }
+    
     :focus{
       filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.7));
     }

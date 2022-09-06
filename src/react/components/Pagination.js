@@ -8,6 +8,14 @@ export const StyledPagination = styled.div`
   margin-top: 40px;
   margin-left: 200px;
   
+  @media (max-width: 1250px){
+    margin-left: 50px;
+  }
+  
+  @media (max-width: 895px){
+    display: none;
+  }
+  
   button{
     background-color: #4618ac;
     color: white;
@@ -18,6 +26,12 @@ export const StyledPagination = styled.div`
     margin-bottom: 100px;
     width: 30px;
     height: 30px;
+    
+    @media (max-width: 1250px){
+      margin-right: 0;
+      width: 23px;
+      height: 20px;
+    }
     
     :hover{
       cursor: pointer;

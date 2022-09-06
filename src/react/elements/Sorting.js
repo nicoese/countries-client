@@ -15,6 +15,19 @@ export const StyledSorting = styled.div`
   font-size: medium;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
   
+  @media (max-width: 1250px){
+    max-height: 100px;
+    max-width: 870px;
+    
+    h2{
+      margin-right: 40px;
+    } 
+  }
+  
+  @media(max-width: 895px){
+    display: none;
+  }
+  
   select{
     width: 200px;
     height: 35px;
@@ -41,6 +54,7 @@ export const StyledSorting = styled.div`
     font-size: 35px;
     width: 320px;
     margin-left: 50px;
+    
   }
 
 `

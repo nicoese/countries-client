@@ -8,13 +8,20 @@ import {searchCountries, setPageNumber} from "../../redux/actions";
 import styled from "styled-components";
 
 export const StyledCountries = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   min-height: 100vh;
   align-self: center;
+
+  @media (max-width: 1250px){
+    max-width: 900px;
+  }
+  
 `
 
 export const Main = styled.div`
   display: flex;
+  
+  
 `
 export const CountriesContainer = styled.div`
   
@@ -34,10 +41,12 @@ export const CountriesContainer = styled.div`
     text-align: center;
   }
   
-  img{
-    width: 229px;
-    height: 141px;
+  
+  
+  @media (max-width: 1250px){
+    grid-template-columns: repeat(2, 1fr);
   }
+  
 `
 
 export const Countries = ({location}) => {

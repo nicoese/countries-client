@@ -6,9 +6,43 @@ export const StyledCard = styled.div`
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
   max-height: 390px;
   min-height: 390px;
+  max-width: 230px;
+  
+  @media (max-width: 1250px){
+    min-width: 320px;
+    min-height: 430px;
+
+    img{
+      min-width: 320px;
+      min-height: 200px;
+    }
+  }
+
+  @media (max-width: 895px){
+    
+    max-width: 150px;
+    min-width: 120px;
+    min-height: 200px;
+    
+    img{
+      max-width: 150px;
+      min-width: 150px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+  }
+
+  img{
+    width: 229px;
+    height: 141px;
+  }
   
   h3{
     margin-bottom: 30px;
+    @media (max-width: 895px){
+      margin-bottom: 0;
+      font-size: medium;
+    }
   }
   
   h3, p{
@@ -23,6 +57,11 @@ export const StyledCard = styled.div`
   p{
     margin-bottom: 20px;
     margin-right: 5px;
+    
+    @media (max-width: 895px){
+      margin-bottom: 5px;
+      font-size: smaller;
+    }
   }
   
   span{
