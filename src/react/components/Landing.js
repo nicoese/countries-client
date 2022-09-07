@@ -8,6 +8,12 @@ export const StyledLanding = styled.div`
   display: flex;
   flex-direction: column;
 
+  
+  //@media(max-width: 600px){
+  //  width: 100%;
+  //}
+  
+
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
 
   .image {
@@ -27,10 +33,17 @@ export const StyledLanding = styled.div`
     margin-top: 40px;
     margin-bottom: 30px;
     font-family: Bahnschrift;
+
+    @media(max-width: 600px){
+      font-size: 20px;
+      //max-width: 50%;
+    }
   }
   p{
     margin-left: 200px;
     margin-right: 200px;
+
+    
   }
   button{
     margin-top: 50px;
@@ -43,6 +56,12 @@ export const StyledLanding = styled.div`
 
     font-size: large;
 
+    @media(max-width: 600px){
+      max-width: 50%;
+      font-size: medium;
+      min-height: 200px;
+    }
+    
     :hover{
       cursor: pointer;
       filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.7));
@@ -60,6 +79,10 @@ export const StyledLanding = styled.div`
     flex-direction: column;
     width: 1200px;
     text-align: center;
+    
+    @media(max-width: 600px){
+      max-width: 80%;
+    }
   }
   
   .about{
@@ -69,6 +92,14 @@ export const StyledLanding = styled.div`
     min-height: 600px;
     background-color: #5825cc;
     align-self: center;
+
+    @media(max-width: 1120px){
+      max-width: 600px;
+      padding: 0;
+    }
+    @media (max-width: 650px){
+      max-width: 350px;
+    }
     
   }
   
@@ -77,6 +108,11 @@ export const StyledLanding = styled.div`
     font-size: larger;
     margin-left: 120px;
     margin-top: 40px;
+    
+    @media (max-width: 1120px){
+      min-width: 80%;
+      margin-left: 30px;
+    }
   }
   
   
@@ -110,7 +146,14 @@ export const StyledLanding = styled.div`
     border: white solid 4px;
   }
 }
-  
+
+  .coverp{
+
+    @media(max-width: 600px){
+      display: none;
+    }
+
+  }
 `
 
 export const Landing = (props) => {
@@ -122,7 +165,7 @@ export const Landing = (props) => {
                     Hola, viajeros. ¿A dónde les gustaría ir?
                 </h1>
                 <div>
-                    <p>
+                    <p className={"coverp"}>
                         Nuestro equipo de viajeros expertos y apasionados
                         exploradores está aquí para ayudarte a descubrir el
                         mundo y simplificar tu experiencia de viaje.
