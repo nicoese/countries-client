@@ -19,7 +19,6 @@ function App() {
     useEffect(() => {
         document.title = 'COUNTRIES'
         dispatch(getState())
-        console.log(apiurl)
     }, [])
 
 

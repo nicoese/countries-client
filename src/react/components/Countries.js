@@ -34,11 +34,23 @@ export const CountriesContainer = styled.div`
   
   .noResults{
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     flex-direction: column;
-    align-content: center;
-    margin-top: 250px;
     text-align: center;
+    margin-top: 200px;
+    align-content: center;
+    width: 950px;
+    
+    @media(max-width: 1250px){
+      
+      width: 650px;
+    }
+    @media(max-width: 700px){
+
+      font-size: small;
+      max-width: 350px;
+      margin-left: 5%;
+    }
   }
   
   
