@@ -68,7 +68,10 @@ export const Seeker = (props) => {
     return <StyledSeeker>
         <input onChange={handleChange} onKeyUp={handleKeyUp} value={name} placeholder={'Buscar...'} type="text"/>
         <Link to={`/countries`}>
-            <button onClick={() => dispatch(searchCountries(name))}>
+            <button onClick={() => {
+                dispatch(searchCountries(name))
+                setName("")
+            }}>
                 Ir
             </button>
         </Link>
